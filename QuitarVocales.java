@@ -5,13 +5,15 @@ public class QuitarVocales {
     public static void main(String[] args) {
         if(args.length==0){//Obligatorio que no reciba argumentos
             Scanner sc = new Scanner(System.in);
-
-
             String palabra=sc.nextLine();
+            sc.close();
+
             System.out.println(quitarVocales(palabra)); //devuelve por la salida estándar la palabra sin vocales.
+            
+            
             System.exit(0);
         }else{//Si los argumentos no son validos
-            System.exit(-1);
+            System.exit(-1);    
         }
 
 
